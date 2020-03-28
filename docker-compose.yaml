@@ -1,0 +1,11 @@
+version: "3"
+services:
+  nodeapp:
+    container_name: nodeapp
+    restart: always
+    build: .
+    environment: 
+      - MONGODB_ADDON_URI=mongodb://192.168.0.18:27017/test
+      - PORT=3000
+    ports:
+      - "3000:3000"
