@@ -5,7 +5,7 @@ services:
     restart: always
     build: .
     environment: 
-      - MONGODB_ADDON_URI=mongodb://192.168.0.12:27017/test
+      - MONGODB_ADDON_URI=mongodb://mongodb.mydomain.com:27017/test
       - PORT=3000
     ports:
       - "3000:3000"
